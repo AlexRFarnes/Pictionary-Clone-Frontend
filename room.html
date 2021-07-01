@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pictionary</title>
+  <link rel="stylesheet" href="room.css">
+  <script src="./room.js" defer></script>
+</head>
+<body>
+  <div class="draw-wrapper">
+    <div class="draw-settings" data-draw-settings>
+      <input type="color" name="color" id="colorPicker" class="color-picker" data-color-picker>
+      <label for="strokeWidth" class="label" data-stroke-label>Stroke width:</label>
+      <input type="range" name="strokeWidth" min="1" max="10" value="1" step="1" id="strokeWidth" data-stroke-range>
+    </div>
+    <canvas class="game-board" data-canvas></canvas>
+  </div>
+  <section class="text-section">
+    <h3 class="word" data-word></h3>
+    <div class="messages" data-messages></div>
+    <form class="guess-form" data-guess-form>
+      <input type="text" class="guess-input" data-guess-input placeholder="Your Guess..." />
+      <button type="submit" class="guess-btn">Guess</button>
+    </form>
+    <button type="button" class="ready-btn" data-ready-btn>Ready</button>
+  </section>
+
+  <template data-guess-template>
+    <div class="guess-container">
+      <div class="name" data-name></div>
+      <div class="text" data-text></div>
+    </div>
+  </template>
+</body>
+</html>
