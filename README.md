@@ -18,8 +18,8 @@ This is a clone of the Pictionary game where multiple persons can join a room. W
 
 ## Screenshots
 
-![Screenshot]()
-[Demo]()
+![pictionary-clone](https://user-images.githubusercontent.com/57517804/124240464-59c54f80-db4d-11eb-8574-ee3f27299033.jpg)
+[Demo](https://brave-kirch-002ad0.netlify.app)
 
 ## Technologies
 
